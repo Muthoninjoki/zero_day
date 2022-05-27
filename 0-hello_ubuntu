@@ -1,1 +1,21 @@
-Linux
+[0;1;32m●[0m ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Fri 2022-05-27 16:11:18 UTC; 4h 5min ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 836 (sshd)
+      Tasks: 1 (limit: 1131)
+     Memory: 5.1M
+     CGroup: /system.slice/ssh.service
+             └─836 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+
+May 27 16:11:18 ubuntu-focal sshd[836]: Server listening on 0.0.0.0 port 22.
+May 27 16:11:18 ubuntu-focal sshd[836]: Server listening on :: port 22.
+May 27 16:11:18 ubuntu-focal systemd[1]: Started OpenBSD Secure Shell server.
+May 27 16:11:18 ubuntu-focal sshd[837]: Accepted publickey for vagrant from 10.0.2.2 port 50777 ssh2: RSA SHA256:1M4RzhMyWuFS/86uPY/ce2prh/dVTHW7iD2RhpquOZA
+May 27 16:11:18 ubuntu-focal sshd[837]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+May 27 16:11:20 ubuntu-focal sshd[971]: ssh_dispatch_run_fatal: Connection from 10.0.2.2 port 50763: Broken pipe [preauth]
+May 27 16:11:25 ubuntu-focal sshd[1593]: Accepted publickey for vagrant from 10.0.2.2 port 50782 ssh2: RSA SHA256:abFLE3EM0mTLoSDQnn3kHPlk6hvVWDCteJZ6cHAY2M8
+May 27 16:11:25 ubuntu-focal sshd[1593]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+May 27 19:51:38 ubuntu-focal sshd[16613]: Accepted publickey for vagrant from 10.0.2.2 port 50885 ssh2: RSA SHA256:abFLE3EM0mTLoSDQnn3kHPlk6hvVWDCteJZ6cHAY2M8
+May 27 19:51:38 ubuntu-focal sshd[16613]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
